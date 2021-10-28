@@ -1,0 +1,90 @@
+body {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.image-comparison {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 50vw;
+  user-select: none;
+
+  &__img,
+  &__handle {
+      overflow: hidden;
+      user-select: none;
+  }
+
+  &__img {
+      width: 100%;
+      vertical-align: middle;
+
+      &:not(:last-child) {
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+      }
+  }
+
+  &__handle {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 100%;
+      cursor: grab;
+
+      &::before {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          width: 1px;
+          height: 100%;
+          content: '';
+          transform: translateX(-50%);
+          opacity: .5;
+          background: white;
+      }
+  }
+
+  &__icons {
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 5rem;
+      height: 5rem;
+      pointer-events: none;
+      color: white;
+      border: 3px solid rgba(255, 255, 255, .75);
+      border-radius: 50%;
+      background-color: RoyalBlue;
+      background-clip: padding-box;
+      font-size: 1.3rem;
+
+      &::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 4.3rem;
+          height: 4.3rem;
+          content: '';
+          transform: translate(-50%, -50%);
+          border: 1px solid white;
+          border-radius: 50%;
+          background-color: transparent;
+      }
+  }
+
+  .icon-chevron-left {
+      margin-right: .5rem;
+  }
+}
