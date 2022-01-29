@@ -1,17 +1,20 @@
-import './index.css';
+import './index.css'
 
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import ImageComparisonSlider from './ImageComparisonSlider';
+import ImageComparisonSlider from './ImageComparisonSlider'
 
 ReactDOM.render(
   <React.StrictMode>
     <ImageComparisonSlider
-      imageLeft="https://cdn.shopify.com/s/files/1/0187/6800/3136/files/GettyImages-1014102550_SQ833x463_356486f5-9545-4123-97c6-8fa75474ac6c.jpg?v=1588659416"
-      imageRight="https://cdn.shopify.com/s/files/1/0187/6800/3136/files/GettyImages-1014102550_SQ833x463_356486f5-9545-4123-97c6-8fa75474ac6c.jpg?v=1588659416"
-      styleRightImage={{ filter: 'blur(3px)' }}
+      imageLeft='https://cdn.pixabay.com/photo/2022/01/07/07/13/chicago-6921297_1280.jpg'
+      imageRight='https://cdn.pixabay.com/photo/2022/01/07/07/13/chicago-6921297_1280.jpg'
+      blurRightImage={'3'}
+      handleText={'Handler'}
+      titleLeft={'Left Title'}
+      titleRight={'Right Title'}
     />
   </React.StrictMode>,
-  document.getElementById('root'),
-);
+  document.getElementById('root')
+)
