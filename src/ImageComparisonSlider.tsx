@@ -96,6 +96,8 @@ const ImageComparisonSlider: FC<IProps> = (props: IProps) => {
       ;({ width: handleWidth } = handleRef.current.getBoundingClientRect())
       ;({ width: imgWidth, height: imgHeight } =
         leftImgRef.current.getBoundingClientRect())
+
+      handleTitles()
     }
   }
 
@@ -125,7 +127,7 @@ const ImageComparisonSlider: FC<IProps> = (props: IProps) => {
       window.removeEventListener('resize', handleResize)
       window.removeEventListener('mouseup', handleEnd)
     }
-  }, [])
+  }, [leftImgRef?.current?.clientWidth])
 
   return (
     <div className='image-comparison' style={{ opacity: isLoad ? 1 : 0 }}>
