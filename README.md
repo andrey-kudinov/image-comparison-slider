@@ -6,18 +6,18 @@ Image Comparison Slider is a slider that can be controlled, can be pulled by the
 
 | Command    | Description           |
 | ---------- | --------------------- |
-| yarn       | Install dependencies  |
-| yarn dev   | Serve with hot reload |
-| yarn build | Build project         |
-| yarn lint  | Run eslint            |
+| yarn       | install dependencies  |
+| yarn dev   | serve with hot reload |
+| yarn build | build the project         |
+| yarn lint  | run eslint            |
 
 ### Props
 
-| Name           | Type   | Required     | Description                            |
-| -------------- | ------ | ------------ | -------------------------------------- |
-| imageLeft      | string | **Required** | URL of left image to use               |
-| imageRight     | string | **Required** | URL of after image to use              |
-| blurRightImage | string | option       | filter: `blur(${**blurRightImage**}px) |
-| handleText     | string | option       | handler text                           |
-| titleLeft      | string | option       | left title                             |
-| titleRight     | string | option       | right title                            |
+| Name           | Type   | Description                            |
+| -------------- | ------ | -------------------------------------- |
+| imageLeft      | string |  left image URL (**required**)                |
+| imageRight     | string |  right image URL (**required**)               |
+| blurRightImage | number |  blur radius (px), a larger value will create more blur |
+| handleText     | string |  handler text                           |
+| titleLeft      | string |  left title                             |
+| titleRight     | string |  right title                            |
