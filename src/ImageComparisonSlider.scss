@@ -117,6 +117,12 @@ body {
     }
   }
 
+  .hide-title {
+    &::after {
+      content: none;
+    }
+  }
+
   .icon-chevron-left {
     margin-right: .5rem;
   }
@@ -147,9 +153,8 @@ body {
     }
   }
 
-  // for specificity
-  .image-comparison__title-left,
-  .image-comparison__title-right {
+  &__title-left,
+  &__title-right {
     position: absolute;
     top: 75%;
     max-width: 9rem;
