@@ -7,7 +7,7 @@ import React, { FC, useEffect, useRef, useState } from 'react'
 interface IProps {
   imageLeft: string
   imageRight: string
-  blurRightImage?: string
+  blurRightImage?: number
   handleText?: string
   titleLeft?: string
   titleRight?: string
@@ -143,17 +143,23 @@ const ImageComparisonSlider: FC<IProps> = (props: IProps) => {
         aria-label='Handler image comparison'
         role='slider'
         tabIndex={0}>
-        <div className='image-comparison__icons' data-content={handleText}>
+        <div
+          className={`image-comparison__icons ${handleText ? '' : 'hide-title'}`}
+          data-content={handleText}>
           <i className='icon-chevron-left'>&lt;</i>
           <i className='icon-chevron-right'>&gt;</i>
         </div>
       </div>
-      <h3 className='image-comparison__title-left' ref={leftTitleRef}>
-        {titleLeft}
-      </h3>
-      <h3 className='image-comparison__title-right' ref={rightTitleRef}>
-        {titleRight}
-      </h3>
+      {titleLeft && (
+        <h3 className='image-comparison__title-left' ref={leftTitleRef}>
+          {titleLeft}
+        </h3>
+      )}
+      {titleRight && (
+        <h3 className='image-comparison__title-right' ref={rightTitleRef}>
+          {titleRight}
+        </h3>
+      )}
       <img
         className='image-comparison__img'
         ref={leftImgRef}
