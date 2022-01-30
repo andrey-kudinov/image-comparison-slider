@@ -10,7 +10,7 @@ ReactDOM.render(
     <ImageComparisonSlider
       imageLeft='https://cdn.pixabay.com/photo/2022/01/07/07/13/chicago-6921297_1280.jpg'
       imageRight='https://cdn.pixabay.com/photo/2022/01/07/07/13/chicago-6921297_1280.jpg'
-      blurRightImage={'3'}
+      blurRightImage={3}
       handleText={'Handler'}
       titleLeft={'Left Title'}
       titleRight={'Right Title'}
