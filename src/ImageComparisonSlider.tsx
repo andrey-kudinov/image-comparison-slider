@@ -34,7 +34,6 @@ const ImageComparisonSlider: FC<IProps> = (props: IProps) => {
 
   const handleStart = (e: any): void => {
     e.stopPropagation()
-    e.preventDefault()
     clientX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX
     isMouseDown = true
   }
