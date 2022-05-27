@@ -8,16 +8,16 @@ Image Comparison Slider is a slider that can be controlled, can be pulled by the
 | ---------- | --------------------- |
 | yarn       | install dependencies  |
 | yarn dev   | serve with hot reload |
-| yarn build | build the project         |
+| yarn build | build the project     |
 | yarn lint  | run eslint            |
 
 ### Props
 
-| Name           | Type   | Description                            |
-| -------------- | ------ | -------------------------------------- |
-| imageLeft      | string |  left image URL (**required**)                |
-| imageRight     | string |  right image URL (**required**)               |
-| blurRightImage | number |  blur radius (px), a larger value will create more blur |
-| handleText     | string |  handler text                           |
-| titleLeft      | string |  left title                             |
-| titleRight     | string |  right title                            |
+| Name           | Type   | Description                                            |
+| -------------- | ------ | ------------------------------------------------------ |
+| imageLeft      | string | left image URL (**required**)                          |
+| imageRight     | string | right image URL (**required**)                         |
+| blurRightImage | number | blur radius (px), a larger value will create more blur |
+| handleText     | string | handler text                                           |
+| titleLeft      | string | left title                                             |
+| titleRight     | string | right title                                            |
