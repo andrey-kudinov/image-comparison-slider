@@ -1,6 +1,6 @@
 # Image comparison slider
 
-Image Comparison Slider is a slider that can be controlled, can be pulled by the customer to show less of the before image and a more noteworthy measure of the after image, and the a different way. These types of image comparison sliders are quite popular at the moment and very effective in showing the differences between 2 images. They are useful in many industries to make comparisons between two images, usually a before-after kind, with the two images superimposed on each other.
+Image Comparison Slider is a slider that can be controlled, can be pulled by the customer to show less of the before image and a more noteworthy measure of the after image, and the a different way. These types of image comparison sliders are quite popular at the moment and very effective in showing the differences between two images. They are useful in many industries to make comparisons between two images, usually a before-after kind, with the two images superimposed on each other.
 
 ### Commands
 
