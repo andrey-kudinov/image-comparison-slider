@@ -5,11 +5,13 @@ import ReactDOM from 'react-dom'
 
 import ImageComparisonSlider from './ImageComparisonSlider'
 
+const randomPhoto = 'https://picsum.photos/1280/720'
+
 ReactDOM.render(
   <React.StrictMode>
     <ImageComparisonSlider
-      imageLeft='https://cdn.pixabay.com/photo/2022/01/07/07/13/chicago-6921297_1280.jpg'
-      imageRight='https://cdn.pixabay.com/photo/2022/01/07/07/13/chicago-6921297_1280.jpg'
+      imageLeft={randomPhoto}
+      imageRight={randomPhoto}
       blurRightImage={3}
       handleText={'Handler'}
       titleLeft={'Left Title'}
