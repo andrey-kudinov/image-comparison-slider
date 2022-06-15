@@ -21,3 +21,9 @@ Image Comparison Slider is a slider that can be controlled, can be pulled by the
 | handleText     | string | handler text                                           |
 | titleLeft      | string | left title                                             |
 | titleRight     | string | right title                                            |
+
+## Do you like the slider? Please star ⭐ this repository!
+
+Made by Andrey Kudinov with ❤️
+
+Need help? Feel free to contact me [2499931@gmail.com](mailto:2499931@gmail.com?Subject=image-comparison-slider)
