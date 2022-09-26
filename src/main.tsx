@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom'
 
 import ImageComparisonSlider from './ImageComparisonSlider'
 
-const randomPhoto = 'https://picsum.photos/1280/720'
+const randomPhoto = 'https://source.unsplash.com/collection/1777528/1280x720'
 
 ReactDOM.render(
   <React.StrictMode>
