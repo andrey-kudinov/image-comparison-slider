@@ -16,6 +16,7 @@ body {
   user-select: none;
   transition: .5s ease;
   opacity: 0;
+  user-select: none;
 
   &__img,
   &__handle {
